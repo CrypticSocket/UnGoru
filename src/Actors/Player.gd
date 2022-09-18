@@ -5,7 +5,7 @@ export var stompVelocity: = 500.0
 func _ready():
 	pass # Replace with function body.
 
-func _on_EnemyDetector_area_entered(area):
+func _on_EnemyDetector_area_entered(area: Area2D):
 	_velocity = calculateStompVelocity(_velocity, stompVelocity)
 	
 func _on_EnemyDetector_body_entered(body):
