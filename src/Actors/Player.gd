@@ -9,7 +9,7 @@ func _on_EnemyDetector_area_entered(area: Area2D):
 	_velocity = calculateStompVelocity(_velocity, stompVelocity)
 	
 func _on_EnemyDetector_body_entered(body):
-	queue_free()
+	die()
 	
 func _physics_process(delta):
 	var direction: = get_direction()
@@ -44,5 +44,9 @@ func calculateStompVelocity(
 	var stompVelocity = linearVelocity
 	stompVelocity.y = -impulse
 	return stompVelocity
+	
+func die():
+	PlayerData.deaths += 1
+	queue_free()
 
 
