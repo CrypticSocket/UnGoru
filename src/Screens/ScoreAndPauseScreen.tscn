@@ -28,9 +28,9 @@ anchor_bottom = 1.0
 color = Color( 0.0862745, 0, 0, 0.352941 )
 
 [node name="PausedText" parent="PauseOverlay" instance=ExtResource( 1 )]
-margin_left = -39.0
+margin_left = -128.0
 margin_top = 128.0
-margin_right = 39.0
+margin_right = 128.0
 margin_bottom = 152.0
 text = "Paused"
 
